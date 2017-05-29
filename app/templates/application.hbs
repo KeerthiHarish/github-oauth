@@ -1,0 +1,26 @@
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash messageStyle='bootstrap'}}
+{{/each}}
+
+{{!-- <div>
+  {{#if session.isAuthenticated}}
+    <a {{action 'invalidateSession'}}>Logout</a>
+  {{else}}
+    <a {{action 'authenticateSession'}}>Login</a>
+  {{/if}}
+</div>
+ --}}
+ {{!-- <button onclick={{action "logout"}}>Log Out</button> --}}
+
+ <div class="pageWrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <div class="heading">
+          <h1>~git~tool</h1>
+        </div>
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</div>

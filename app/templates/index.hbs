@@ -1,0 +1,16 @@
+<div class="whiteContainer sidebarContainer paddingNone">
+
+  <div class="sidebar">
+    <div class="members">
+      <img src={{user.avatarUrl}} width="80" style="margin-bottom: 10px;"><br>
+      Username: {{user.login}}
+      Name: {{user.name}}
+    </div>
+  </div>
+  <div class="sidebarContainerContent">
+    <div class="pageHeader">
+      <h2 class="inline">Projects</h2>
+    </div>
+    {{projects-container repos=repos openProject="openProject"}}
+  </div>
+</div>

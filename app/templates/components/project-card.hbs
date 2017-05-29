@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading" {{action "openProject" repo.id on="click" }}>
+    <h3 class="panel-title">{{repo.name}}</h3>
+  </div>
+  {{#if repo.description}}
+    <div class="panel-body">{{repo.description}}</div>
+  {{else}}
+    <div class="panel-body">No Description available.</div>
+  {{/if}}
+  <div class="panel-footer">
+    Language: {{repo.language}}
+  </div>
+</div>
